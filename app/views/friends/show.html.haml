@@ -1,0 +1,21 @@
+%p#notice= notice
+
+%p
+  %b First name:
+  = @friend.first_name
+%p
+  %b Last name:
+  = @friend.last_name
+%p
+  %b Email:
+  = @friend.email
+%p
+  %b Phone:
+  = @friend.phone
+%p
+  %b Twitter:
+  = @friend.twitter
+
+= link_to 'Edit', edit_friend_path(@friend)
+\|
+= link_to 'Back', friends_path
